@@ -8,16 +8,19 @@ Temperature[] temps = {
     };
 
 // TODO: Static methods are accessed using the class name and the method name
-
+Console.WriteLine($"72.00 F in C is {Temperature.FtoC(72.0):F2}");
+Console.WriteLine($"22.00 C in F is {Temperature.CtoF(22.0):F2}");
 
 // How many temperatures are room temp?
-// var roomtemps = 0;
-// foreach (Temperature t in temps) {
-//     if (t.IsRoomTemp())
-//         roomtemps++;
-// }
+var roomtemps = 0;
+foreach (Temperature t in temps) {
+    if (t.IsRoomTemp())
+        roomtemps++;
+}
 // Constants are accessed the same as static members
-// Console.WriteLine($"Room temp is between {Temperature.ROOM_TEMP_LOWER_C}C and {Temperature.ROOM_TEMP_UPPER_C}C");
-// Console.WriteLine($"{roomtemps} measurements are room temperature");
+Console.WriteLine($"Room temp is between {Temperature.ROOM_TEMP_LOWER_C}C and {Temperature.ROOM_TEMP_UPPER_C}C");
+Console.WriteLine($"{roomtemps} measurements are room temperature");
 
 // TODO: Check to see if a given temperature value is room temp
+Console.WriteLine($"22.0 C is room temp: {Temperature.IsRoomTemp(22.0)}");
+Console.WriteLine($"17.0 C is room temp: {Temperature.IsRoomTemp(17.0)}");

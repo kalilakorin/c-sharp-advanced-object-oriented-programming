@@ -3,12 +3,14 @@
 
 // Construct some objects using Object Initializer syntax
 Employee emp1 = new Employee() {FirstName="John", LastName="Doe", ID=1, Department="Sales"};
+// Employee emp1 = new Employee() {FirstName="John", ID=1, Department="Sales"};
+// Employee emp1 = new Employee() {LastName="Doe", ID=1, Department="Sales"};
 Employee emp2 = new Employee() {FirstName="Jane", LastName="Deaux", ID=2, Department="R&D"};
 Employee emp3 = new Employee() {FirstName="Jim", LastName="Dough", ID=3, Department="Marketing"};
+Employee emp4 = new Employee("Joe", "Doh", 4, "Marketing");
 
 // TODO: Construct an object using the constructor
-
-
 Console.WriteLine(emp1);
 Console.WriteLine(emp2);
 Console.WriteLine(emp3);
+Console.WriteLine(emp4);
